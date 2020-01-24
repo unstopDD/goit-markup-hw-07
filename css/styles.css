@@ -221,7 +221,7 @@ p {
   position: relative;
 }
 
-.partner .partner-image-icon {
+.partner-image-icon {
   background-color: #ff4e50;
   height: 30px;
   width: 30px;
@@ -230,6 +230,12 @@ p {
   position: absolute;
   right: 0%;
   bottom: 100%;
+  transform: scale(1);
+}
+
+.image:hover .partner-image-icon,
+.image:focus .partner-image-icon {
+  transform: scale(1.05);
 }
 
 .partner-image-icon:nth-child(2) {
