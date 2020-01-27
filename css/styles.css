@@ -15,7 +15,7 @@ html {
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300i,400&display=swap');
 
-/* Typographi */
+/* Typography */
 
 h1,
 h2,
@@ -33,11 +33,6 @@ p {
   font-weight: 300;
 }
 
-.body {
-  min-width: 320px;
-  max-width: 1440px;
-}
-
 /* Header */
 
 .hero {
@@ -48,8 +43,12 @@ p {
   color: #fff;
 }
 
-.hero .container {
+.hero {
   text-align: center;
+  min-width: 320px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-name {
@@ -100,7 +99,7 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .hero .container {
+  .hero {
     padding-right: 10px;
     padding-left: 10px;
     height: 540px;
@@ -139,7 +138,7 @@ p {
     height: 700px;
   }
 
-  .hero .container {
+  .container {
     width: 748px;
     padding-top: 50px;
     padding-right: 40px;
@@ -182,10 +181,10 @@ p {
     margin-bottom: 75px;
   }
 
-  .hero .container {
-    width: 960px;
+  .container {
     padding-right: 10px;
     padding-left: 10px;
+    width: 960px;
   }
 
   .site-nav {
@@ -216,7 +215,7 @@ p {
   text-align: center;
   list-style: none;
 }
-.image {
+.partner-link {
   width: 120px;
   position: relative;
 }
@@ -233,20 +232,20 @@ p {
   transform: scale(1);
 }
 
-.image:hover .partner-image-icon,
-.image:focus .partner-image-icon {
+.partner-link:hover .partner-image-icon,
+.partner-link:focus .partner-image-icon {
   transform: scale(1.05);
 }
 
-.partner-image-icon:nth-child(2) {
+.partner-list:nth-child(2) .partner-image-icon {
   background-color: #1cd7ad;
 }
 
-.partner-image-icon:nth-child(3) {
+.partner-list:nth-child(3) .partner-image-icon {
   background-color: #ffa507;
 }
 
-.partner-image-icon:nth-child(4) {
+.partner-list:nth-child(4) .partner-image-icon {
   background-color: #4e73db;
 }
 
