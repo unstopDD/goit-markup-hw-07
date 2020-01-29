@@ -63,6 +63,7 @@ p {
   font-size: 14px;
   font-weight: 700;
   margin-right: 40px;
+  padding: 12px 16px;
 }
 
 .auth-link {
@@ -72,9 +73,15 @@ p {
 
 .auth:nth-child(2) {
   margin-right: 0;
+}
+.auth:hover,
+.auth:focus {
   border: 3px solid #fff;
   border-radius: 30px;
-  padding: 12px 16px;
+}
+
+.site-auth {
+  all: unset;
 }
 
 .logo {
@@ -86,16 +93,28 @@ p {
   cursor: pointer;
 }
 
-.hero .button {
+.hero .info {
   all: unset;
-  background-color: #ff4e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 280px;
+  border: 3px solid #fff;
   height: 40px;
   font-family: var(--primary-font-stack);
   font-weight: 700;
-  padding-bottom: 15px;
-  padding-top: 15px;
   border-radius: 30px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info:hover,
+.info:focus {
+  border: unset;
+  border-radius: 30px;
+  background-color: #ff4e50;
 }
 
 @media screen and (max-width: 767px) {
@@ -122,7 +141,7 @@ p {
     margin-bottom: 35px;
   }
 
-  .hero .button {
+  .hero .info {
     padding-right: 52px;
     padding-left: 52px;
   }
@@ -166,9 +185,9 @@ p {
     margin-bottom: 40px;
   }
 
-  .hero .button {
-    padding-right: 30px;
-    padding-left: 30px;
+  .hero .info {
+    width: 235px;
+    height: 40px;
   }
 }
 
@@ -199,9 +218,9 @@ p {
     margin-bottom: 50px;
   }
 
-  .hero .button {
-    padding-right: 25px;
-    padding-left: 25px;
+  .hero .info {
+    width: 230px;
+    height: 40px;
   }
 }
 
@@ -249,16 +268,27 @@ p {
   background-color: #4e73db;
 }
 
-.main .button {
+.main .info {
   all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 3px solid #ff4e50;
   font-family: var(--primary-font-stack);
   font-weight: 700;
-  padding-top: 15px;
-  padding-bottom: 15px;
   border-radius: 30px;
   color: #ff4e50;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .info:hover,
+.main .info:focus {
+  background-color: #ff4e50;
+  color: #fff;
+  border: unset;
 }
 
 @media screen and (max-width: 767px) {
@@ -289,9 +319,9 @@ p {
     margin-bottom: 45px;
   }
 
-  .main .button {
-    padding-right: 52px;
-    padding-left: 52px;
+  .main .info {
+    height: 40px;
+    width: 280px;
   }
 }
 
@@ -333,9 +363,9 @@ p {
   .partner-name {
     margin-bottom: 20px;
   }
-  .main .button {
-    padding-left: 20px;
-    padding-right: 20px;
+  .main .info {
+    width: 190px;
+    height: 40px;
   }
 }
 
@@ -367,5 +397,9 @@ p {
 
   .partner-list:nth-last-child(n) {
     margin-right: 0;
+  }
+  .main .info {
+    width: 180px;
+    height: 40px;
   }
 }
