@@ -63,25 +63,23 @@ p {
   font-size: 14px;
   font-weight: 700;
   margin-right: 40px;
-  padding: 12px 16px;
 }
 
 .auth-link {
   all: unset;
   cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  padding: 12px 16px;
 }
 
 .auth:nth-child(2) {
   margin-right: 0;
 }
-.auth:hover,
-.auth:focus {
+.auth-link:hover,
+.auth-link:focus {
   border: 3px solid #fff;
   border-radius: 30px;
-}
-
-.site-auth {
-  all: unset;
 }
 
 .logo {
@@ -96,25 +94,23 @@ p {
 .hero .info {
   all: unset;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 40px;
   width: 280px;
-  border: 3px solid #fff;
-  height: 40px;
+  background-color: #ff4e50;
   font-family: var(--primary-font-stack);
   font-weight: 700;
   border-radius: 30px;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  transform: scale(1);
 }
 
 .info:hover,
 .info:focus {
-  border: unset;
-  border-radius: 30px;
-  background-color: #ff4e50;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 767px) {
@@ -139,11 +135,6 @@ p {
 
   .header-text {
     margin-bottom: 35px;
-  }
-
-  .hero .info {
-    padding-right: 52px;
-    padding-left: 52px;
   }
 }
 
@@ -235,8 +226,8 @@ p {
   list-style: none;
 }
 .partner-link {
-  width: 120px;
   position: relative;
+  display: block;
 }
 
 .partner-image-icon {
@@ -246,8 +237,8 @@ p {
   border-radius: 30px;
   border: 3px solid #fff;
   position: absolute;
-  left: 70%;
-  bottom: 100%;
+  left: 60%;
+  bottom: 10%;
   transform: scale(1);
 }
 
@@ -282,13 +273,12 @@ p {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  transform: scale(1);
 }
 
 .main .info:hover,
 .main .info:focus {
-  background-color: #ff4e50;
-  color: #fff;
-  border: unset;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 767px) {
