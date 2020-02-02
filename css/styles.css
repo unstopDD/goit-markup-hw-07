@@ -226,8 +226,15 @@ p {
   list-style: none;
 }
 .partner-link {
-  position: relative;
   display: block;
+}
+
+.overlay {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 124px;
+  height: 124px;
 }
 
 .partner-image-icon {
@@ -237,8 +244,8 @@ p {
   border-radius: 30px;
   border: 3px solid #fff;
   position: absolute;
-  left: 60%;
-  bottom: 10%;
+  left: 70%;
+  bottom: 0%;
   transform: scale(1);
 }
 
@@ -294,19 +301,20 @@ p {
     margin-bottom: 20px;
   }
 
-  .partner-image {
+  .overlay {
     margin-bottom: 20px;
   }
   .partner-name {
     margin-bottom: 20px;
   }
 
-  .partner-text {
+  .partner-list {
     margin-bottom: 30px;
   }
 
-  .partner-text:nth-last-child(1) {
-    margin-bottom: 45px;
+  .partner-list:nth-last-child(1) {
+    padding-bottom: 45px;
+    margin-bottom: 0;
   }
 
   .main .info {
@@ -347,7 +355,7 @@ p {
   .partner-list:nth-last-child(n) {
     margin-right: 0;
   }
-  .partner-image {
+  .overlay {
     margin-bottom: 20px;
   }
   .partner-name {
